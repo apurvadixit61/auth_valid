@@ -1,0 +1,280 @@
+<%- include('./property_header.ejs') %>
+    <style type="text/css">
+        body {
+            font-family: 'Helvetica', Arial, sans-serif;
+        }
+
+        a,
+        a[href],
+        a:hover,
+        a:link,
+        a:visited {
+            /* This is the link colour */
+            text-decoration: none !important;
+            color: #0000EE;
+        }
+
+        .link {
+            text-decoration: underline !important;
+        }
+
+        p,
+        p:visited {
+            /* Fallback paragraph style */
+            font-size: 13px;
+            line-height: 22px;
+            font-family: 'Helvetica', Arial, sans-serif;
+            font-weight: 300;
+            text-decoration: none;
+            color: #000000;
+        }
+
+        .v1nameRS {
+            background: #D7F2E3;
+            height: 50px;
+            width: 50px;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 20px;
+            color: #317A36;
+            border-radius: 50%;
+            text-align: center;
+            text-transform: uppercase;
+            /* line-height: 56px; */
+        }
+
+        .v1socialcircle {
+            display: inline-block;
+            width: 40px;
+            height: 40px;
+            text-align: center;
+            border-radius: 50%;
+            vertical-align: middle;
+            border: 1px solid rgba(137, 147, 164, 0.4);
+        }
+
+        .v1RD_heading {
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 21px;
+            color: #091E42;
+        }
+
+        .v1RD_Main_Heading {
+            font-style: normal;
+            font-weight: 600;
+            font-size: 20px;
+            line-height: 28px;
+            color: #091E42;
+        }
+
+        .v1RD_bg {
+            background: rgba(255, 247, 232, 0.6);
+        }
+
+        .v1whitebg {
+            background: #FFF;
+            border-collapse: separate;
+            border: 2px solid rgba(31, 92, 163, 0.2);
+            border-radius: 8px;
+        }
+
+        .v1RD_Main_subHeading {
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 20px;
+            color: #42526E;
+
+        }
+    </style>
+    <table align="center" style="text-align: left;  background: rgba(255, 247, 232, 0.6); vertical-align: top; width: 600px; max-width: 600px;"
+        width="600">
+        <tbody>
+            <tr>
+                <td class="v1RD_height"></td>
+            </tr>
+            <tr>
+                <td ></td>
+                <td style="  font-style: normal;
+                font-weight: 600;
+                font-size: 18px;
+                line-height: 25px;
+                color: #091E42;">Response Details</td>
+                <td ></td>
+            </tr>
+            <tr>
+                <td ></td>
+                <td class="v1height4"></td>
+                <td ></td>
+            </tr>
+            <tr>
+                <td ></td>
+                <td class="v1RD_Main_subHeading">Recorded at : <%= obj.created_at %> </td>
+                <td ></td>
+            </tr>
+            <tr>
+                <td class="v1RD_margin20"></td>
+            </tr>
+            <tr>
+                <td ></td>
+                <td>
+                    <table style=" background: #FFF;
+                    border-collapse: separate;
+                    border: 2px solid rgba(31, 92, 163, 0.2);
+                    border-radius: 8px;" width="100%">
+                        <tbody>
+                            <tr>
+                                <td ></td>
+                            </tr>
+                            <tr>
+                                <td ></td>
+                                <td>
+                                    <table width="100%">
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    <table width="100%">
+                                                        <tbody>
+                                                            <tr>
+                                                                <td>
+                                                                    <table >
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <td style="display: block">
+                                                                                    <table style="margin: auto">
+                                                                                        <tbody>
+                                                                                            <tr>
+                                                                                                <td
+                                                                                                    style="  background: #D7F2E3;
+                                                                                                    height: 56px;
+                                                                                                    width: 56px;
+                                                                                                    font-style: normal;
+                                                                                                    font-weight: 600;
+                                                                                                    font-size: 20px;
+                                                                                                    color: #317A36;
+                                                                                                    border-radius: 50%;
+                                                                                                    text-align: center;
+                                                                                                    text-transform: uppercase;">
+                                                                                                    <%= obj.name_logo %> </td>
+                                                                                            </tr>
+                                                                                        </tbody>
+                                                                                    </table>
+                                                                                </td>
+                                                                                <td
+                                                                                   >
+                                                                                </td>
+                                                                                <td
+                                                                                   >
+                                                                                    <table>
+                                                                                        <tbody>
+                                                                                            <tr>
+                                                                                                <td>
+                                                                                                    <table
+                                                                                                        class="v1b_n">
+                                                                                                        <tbody>
+                                                                                                            <tr>
+                                                                                                                <td
+                                                                                                                    style="   font-weight: 600;
+                                                                                                                    font-size: 14px;
+                                                                                                                    line-height: 21px;
+                                                                                                                    color: #091E42;">
+                                                                                                                    <%= obj.name %>
+                                                                                                                </td>
+                                                                                                                <td
+                                                                                                                   >
+                                                                                                                </td>
+                                                                                                            </tr>
+                                                                                                        </tbody>
+                                                                                                    </table>
+                                                                                                </td>
+                                                                                            </tr>
+                                                                                            <tr>
+                                                                                                <td>
+                                                                                                    <table>
+                                                                                                        <tbody>
+                                                                                                            <tr>
+                                                                                                                <td>
+                                                                                                                    Buyer
+                                                                                                                </td>
+                                                                                                            </tr>
+                                                                                                        </tbody>
+                                                                                                    </table>
+                                                                                                </td>
+                                                                                            </tr>
+                                                                                        </tbody>
+                                                                                    </table>
+                                                                                </td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="v1TextGapheight"></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>
+                                                                    <table class="v1marginTop">
+                                                                        <tbody>
+                                                                            <tr>
+
+                                                                                <td class="v1small12"></td>
+                                                                                <td class="v1textFont">
+                                                                                    <%= obj.phone %></td>
+                                                                                <td class="v1small12"></td>
+
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="v1TextGapheightRow"></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>
+                                                                    <table>
+                                                                        <tbody>
+                                                                            <tr>
+
+                                                                                <td class="v1small12"></td>
+                                                                                <td class="v1textFont"> <a
+                                                                                        style="text-decoration: none; color: #091E42"
+                                                                                        href="./#NOP"
+                                                                                        onclick="return false"
+                                                                                        rel="noreferrer">
+                                                                                        <%= obj.email %></a>
+                                                                                </td>
+                                                                                <td class="v1small12"></td>
+                                                                                <td> </td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </td>
+
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                                <td ></td>
+                            </tr>
+                            <tr>
+                                <td 
+                                ></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+                <td ></td>
+            </tr>
+            <tr>
+                <td ></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <%- include('./property_footers.ejs') %>

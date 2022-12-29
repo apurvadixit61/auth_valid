@@ -1,0 +1,36 @@
+<%- include('./header.ejs') %>
+
+
+  <h3>Welcome<%= receiver %></h3>
+  <p><%= content %>
+   Congratulations!<br/>
+     You have successfully signed up. Please click the link below to verify your account.<br/> </p>
+    
+<h4 style="text-align: left;">Your login details</h4>
+<div style="border: 1px solid #8080804d;padding: 14px;width: 266px;">
+<p><span>Username</span>: <span><%= username %></span></p>
+<p><span>Password</span>: <span><%= password %></span></p>
+</div>
+      
+<br/>
+     
+<div
+style="padding: 30px 0;text-align: center;font-family: Arial;"> <a href=<%= verificationLink %>  style="text-decoration: none;color:#53B1EF;" target="_blank">
+<button style="align-items: center ; background-color: #52B3F0 ;color:#fff ; border-color: #52B3F0; width: 50%; padding:20px">
+   Click to Verify
+</a></button><br/><br/>
+
+</div>
+
+
+
+
+<%- include('./footer.ejs') %>
+
+
+
+
+
+
+
+<!-- style="margin: 0 auto; width: 100%; padding: 30px 0; font-family: Arial" -->
